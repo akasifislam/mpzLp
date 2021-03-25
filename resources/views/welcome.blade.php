@@ -14,6 +14,7 @@
         <div id="app">
             <div class="container">
                 <Myheader></Myheader>
+                <router-view></router-view>
             </div>
         </div>
 

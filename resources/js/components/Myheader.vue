@@ -1,3 +1,7 @@
 <template>
-  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis error necessitatibus impedit aut atque iure dolorum laboriosam corrupti, dolor vitae quibusdam quas consectetur nulla, velit nesciunt expedita minima itaque!</div>
+  <div class="text-center">
+    <router-link to="/login">Login</router-link>
+    <router-link to="/register">Register</router-link>
+    <router-link to="/post">Post</router-link>
+  </div>
 </template>
