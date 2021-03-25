@@ -15,8 +15,9 @@ class PostController extends Controller
             'body' => 'required',
         ]);
         if ($validator->fails()) {
-            return response()->json(['status'=>'error','errors'=>$validator->errors()]);
+            return response()->json(['status' => 'error', 'errors' => $validator->errors()]);
         }
-        Post::create($request->all());
+        $post = Post::create($request->all());
+        return response()->json(['status' => 'success', 'data' => $post]);
     }
 }

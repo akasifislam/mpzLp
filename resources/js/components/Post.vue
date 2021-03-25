@@ -93,6 +93,11 @@ export default {
       axios.post("api/createpost", this.post).then((response) => {
         if (response.data.status == "error") {
           this.errors = response.data.errors;
+        } else if (response.data.status == "success") {
+          Toast.fire({
+            icon: "success",
+            title: "Signed in successfully",
+          });
         }
       });
     },
